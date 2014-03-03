@@ -1,8 +1,7 @@
 {
   "name": "chrismontgomery.info",
-  "private": true,
-  "version": "0.0.0",
-  "description": "a Sails application",
+  "version": "0.0.1",
+  "description": "about Chris Montgomery",
   "dependencies": {
     "sails": "0.9.11",
     "grunt": "0.4.1",
@@ -13,10 +12,11 @@
   },
   "scripts": {
     "start": "node app.js",
-    "debug": "node debug app.js"
+    "debug": "node debug app.js",
+    "postinstall": "./node_modules/bower/bin/bower install"
   },
   "main": "app.js",
-  "repository": "",
-  "author": "",
-  "license": ""
+  "repository": "https://github.com/chmontgomery/chrismontgomery.info",
+  "author": "chr.montgomery@gmail.com",
+  "license": "MIT"
 }
