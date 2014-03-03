@@ -1,7 +1,8 @@
 <div ng-app="chrismontgomery" class="container">
     <h2>A Web Developer with a passion for Javascript, Node.js and all things Open Source.</h2>
-    <img src="http://www.gravatar.com/avatar/9ab0ef003e641be2dfe11239b0a33059.png?s=300"
-            width="150" height="150" alt="Chris Montgomery"/>
+
+    <a href="<%= _.findWhere(model.externals, {id: "linkedin"}).href%>" class="me-circle"></a>
+
     <h1>Chris Montgomery</h1>
     <div>Find me on</div>
     <table class="externals-list">

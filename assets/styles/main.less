@@ -1,8 +1,8 @@
-@import "variables";
-@import "../linker/bower_components/bootstrap/less/mixins";
-@import "../linker/bower_components/bootstrap/less/scaffolding";
-@import "../linker/bower_components/bootstrap/less/utilities";
-
+body {
+  background-color: #151515;
+  color: #fff;
+  font-family: helvetica, arial;
+}
 
 .externals-list {
   margin: 20px auto 0 auto;
@@ -12,9 +12,34 @@
 }
 
 .external-name {
-  font-size: @font-size-h2;
+  font-size: 16px;
 }
 
 .container {
   text-align: center
+}
+
+.me-circle{
+  margin: 0 auto;
+  width: 300px;
+  height: 300px;
+  -webkit-border-radius: 150px;
+  -moz-border-radius: 150px;
+  border-radius: 50%;
+  text-align: center;
+  overflow: hidden;
+  font-family: helvetica, arial;
+  background: #151515 url(http://www.gravatar.com/avatar/9ab0ef003e641be2dfe11239b0a33059.png?s=300) no-repeat center center;
+  display: block;
+  outline: none;
+  -moz-box-shadow: 0 0 8px #fff;
+  -webkit-box-shadow: 0 0 8px #fff;
+  box-shadow: 0px 0px 8px #fff;
+  transition: all 0.5s ease;
+}
+
+.me-circle:hover{
+  -moz-box-shadow: 0 0 20px #fff;
+  -webkit-box-shadow: 0 0 20px #fff;
+  box-shadow: 0px 0px 20px #fff;
 }

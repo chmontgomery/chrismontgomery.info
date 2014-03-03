@@ -52,10 +52,8 @@
   }
 
   angular.module('chrismontgomery', [
-    'controllers.HomeController',
     'directives.iconHoverDirective'
   ]);
-  
 
 })(
 

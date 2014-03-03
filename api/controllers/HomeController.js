@@ -17,15 +17,12 @@
 
 module.exports = {
 
-
   /**
    * Action blueprints:
    *    `/home/index`
    *    `/home`
    */
   index: function (req, res) {
-
-    console.log('we came, we saw');
 
     return res.view({
       model: {
@@ -73,6 +70,4 @@ module.exports = {
    * (specific to HomeController)
    */
   _config: {}
-
-
 };
