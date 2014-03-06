@@ -1,18 +1,9 @@
+@body-bg: #151515;
+
 body {
-  background-color: #151515;
+  background-color: @body-bg;
   color: #fff;
-  font-family: helvetica, arial;
-}
-
-.externals-list {
-  margin: 20px auto 0 auto;
-  .external-item {
-    margin: 0 15px 0 15px;
-  }
-}
-
-.external-name {
-  font-size: 16px;
+  font-family: 'Lato', sans-serif;
 }
 
 .container {
@@ -42,4 +33,71 @@ body {
   -moz-box-shadow: 0 0 20px #fff;
   -webkit-box-shadow: 0 0 20px #fff;
   box-shadow: 0px 0px 20px #fff;
+}
+
+.externals-container {
+  margin: 15px auto 0 auto;
+  display: block;
+  width: 330px;
+  padding-left: 25px;
+}
+
+.external-item-wrap {
+  margin-right: 15px;
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.external-item {
+  background-color: @body-bg;
+  background-repeat: no-repeat;
+  background-size: 64px 64px;
+  width: 64px;
+  height: 64px;
+}
+
+.twitter {
+  background-size: 71px 58px;
+  width: 71px;
+  height: 58px;
+  background-image: url('/images/twitter-icon-color.png');
+  &:hover {
+    background-image: url('/images/twitter-icon-white.png');
+  }
+}
+
+.linkedin {
+  background-size: 71px 60px;
+  width: 71px;
+  height: 60px;
+  background-image: url('/images/linkedin-icon-color.png');
+  &:hover {
+    background-image: url('/images/linkedin-icon-white.png');
+  }
+}
+
+.github {
+  background-image: url('/images/github-icon-white.png');
+}
+
+.so {
+  background-image: url('/images/so-icon-color.png');
+  &:hover {
+    background-image: url('/images/so-icon-white.png');
+  }
+}
+
+.pull-left {
+  float: left;
+}
+
+@media (max-width: 350px) {
+  .externals-container {
+    width: 172px;
+  }
+  .externals-row-split {
+    clear: both;
+    margin-bottom: 15px;
+  }
 }

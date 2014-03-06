@@ -52,7 +52,7 @@ module.exports = {
             title: 'Follow me on GitHub'
           },
           {
-            id: 'stack_overflow',
+            id: 'so',
             name: 'StackOverflow',
             href: 'http://stackoverflow.com/users/1691091/chris-montgomery',
             imgSrc: '/images/so-icon-hover.png',

@@ -1,28 +1,21 @@
 <div ng-app="chrismontgomery" class="container">
-    <h2>A Web Developer with a passion for Javascript, Node.js and all things Open Source.</h2>
+    <h2>Web developer with a passion for Javascript, Node.js and all things Open Source.</h2>
 
     <a href="<%= _.findWhere(model.externals, {id: "linkedin"}).href%>" class="me-circle"></a>
 
     <h1>Chris Montgomery</h1>
     <div>Find me on</div>
-    <table class="externals-list">
-        <tr>
-            <% _.each(model.externals, function (e) { %>
-            <td>
-                <div class="external-item">
-                    <%if(e.imgSrc){%>
-                    <a href="<%=e.href%>">
-                        <img src="<%=e.imgSrc%>" height="64" title="<%=e.title%>"
-                             data-img-src="<%=e.imgSrc%>" data-img-hover-src="<%=e.imgHoverSrc%>" icon-hover/>
-                    </a>
-                    <%} else {%>
-                    <a href="<%=e.href%>" class="external-name">
-                        <%=e.name%>
-                    </a>
-                    <%}%>
-                </div>
-            </td>
-            <% }) %>
-        </tr>
-    </table>
+    <div class="externals-container">
+        <% _.each(model.externals, function (value, index) { %>
+            <div class="pull-left external-item-wrap">
+                <a href="<%=value.href%>">
+                    <div class="external-item <%=value.id%>"></div>
+                </a>
+            </div>
+            <% if (index%2 !== 0) { %>
+                <div class="externals-row-split"></div>
+            <% } %>
+        <% }) %>
+    </div>
+    <div style="clear: both;"></div>
 </div>
