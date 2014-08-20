@@ -1,2 +1,3 @@
 # chrismontgomery.info
-### a Sails application
+
+my personal website
